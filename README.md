@@ -1,0 +1,2 @@
+# astrbot_plugin_weather_report
+AstrBot的插件，可以定时推送天气预报或者通过指令实时获取，并以选择的人设口吻进行回复
