@@ -1,0 +1,56 @@
+{
+    "api_key": {
+        "description": "高德地图 API Key",
+        "type": "string",
+        "hint": "请在高德开放平台注册 Web 服务类型 Key",
+        "obvious_hint": true
+    },
+    "city_code": {
+        "description": "城市代码 (adcode)",
+        "type": "string",
+        "hint": "例如：北京 110000"
+    },
+    "push_time": {
+        "description": "定时推送时间 (HH:MM)",
+        "type": "string",
+        "default": "07:30",
+        "hint": "24小时制，如 07:30 或 19:00"
+    },
+    "target_session": {
+        "description": "目标会话 UMO",
+        "type": "string",
+        "default": "",
+        "hint": "在目标会话发送 /get_umo 获取后填入"
+    },
+    "persona_mode": {
+        "description": "人格模式",
+        "type": "string",
+        "default": "global",
+        "options": ["global", "selected"],
+        "hint": "global: 自动使用 AstrBot 全局默认人格（优先使用 default_personality，否则自动选择第一个人格）；selected: 使用下方指定的人格 ID（可通过 /list_personas 命令查看）"
+    },
+    "selected_persona_id": {
+        "description": "指定人格 ID",
+        "type": "string",
+        "default": "",
+        "hint": "仅当人格模式为 selected 时生效。输入人格的唯一标识符（persona_id），可通过 /list_personas 命令查看。例如：米娅"
+    },
+    "deepseek_api_key": {
+        "description": "LLM API Key",
+        "type": "string",
+        "default": "",
+        "hint": "例如 DeepSeek、OpenAI、的 API Key"
+    },
+    "api_base_url": {
+        "description": "LLM API Base URL",
+        "type": "string",
+        "default": "https://api.deepseek.com/v1",
+        "hint": "填写 API 的基础地址，如 https://api.deepseek.com/v1，程序会自动拼接 /chat/completions"
+    },
+    "model_name": {
+        "description": "LLM 模型名称",
+        "type": "string",
+        "default": "deepseek-chat",
+        "hint": "例如：deepseek-chat、doubao-pro-32k、gpt-3.5-turbo 等，根据服务商填写"
+    }
+}

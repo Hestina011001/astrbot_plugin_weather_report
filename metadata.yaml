@@ -1,0 +1,6 @@
+name: 天气预报 (weather report)
+version: 1.1.0
+description: 定时推送天气预报或者通过指令实时获取，并以选择的人设口吻进行回复
+author: 希斯蒂娜Hestina
+dependencies:
+  - aiohttp
